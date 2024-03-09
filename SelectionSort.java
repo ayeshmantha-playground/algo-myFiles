@@ -15,7 +15,7 @@ void main(){
 
 void sortViaMin(int [] nums){
     for (int i = 0; i < nums.length; i++) {
-        int minIndex = i; // This is a necessary
+        int minIndex = i; // This is a mandatory
         int min = nums[minIndex];
 
         for (int j = i+1; j <nums.length ; j++) {

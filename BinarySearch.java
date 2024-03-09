@@ -1,6 +1,6 @@
 void main() {
     int[] nums = {-1, 0, 3, 5, 8, 9, 10, 14};
-    System.out.println(binarySearch(nums,0,nums.length-1,6));
+    System.out.println(binarySearch(nums,0,nums.length-1,3));
 }
 
 int binarySearch(int[] nums, int head, int tail, int target) {
@@ -16,13 +16,13 @@ int binarySearch(int[] nums, int head, int tail, int target) {
         return mid;
     }
 
-//    if (nums[head]  == target) {
-//        return head;
-//    }
-//
-//    if (nums[tail]  == target) {
-//        return tail;
-//    }
+    if (nums[head]  == target) {
+        return head;
+    }
+
+    if (nums[tail]  == target) {
+        return tail;
+    }
 
     if (target > nums[mid] ) {
         head = mid + 1;

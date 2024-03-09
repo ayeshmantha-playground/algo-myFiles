@@ -20,7 +20,7 @@ void sort(int[] nums) {
         for (int j = 0; j < nums[i]; j++) {
             if (value < nums[j]) {
                 insertionIndex = j;
-                break;
+                break; // to stop loop after find the first value greater than the value variable
             }
         }
 

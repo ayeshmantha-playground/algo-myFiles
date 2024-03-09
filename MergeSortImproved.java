@@ -44,7 +44,3 @@ void mergeSort(int[] nums ,int head, int tail) {
     }
 
 }
-
-void sort(int[] array1, int[] array2){
-
-}
